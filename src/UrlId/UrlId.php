@@ -2,10 +2,12 @@
 namespace UrlId;
 
 class UrlId {
-	public static function parse ($url) {
-		if (substr_count('you', $url)) {
+	public static function parse ($url, &$type=false) {
+		if (substr_count('yout', $url)) {
+			$type = 'youtube';
 			return self::youtube($url);
 		} elsif (substr_count('vimeo', $url)) {
+			$type = 'vimeo';
 			return self::vimeo($url);
 		}
 	}
