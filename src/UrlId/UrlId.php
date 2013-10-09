@@ -3,13 +3,15 @@ namespace UrlId;
 
 class UrlId {
 	public static function parse ($url, &$type=false) {
-		if (substr_count('yout', $url) > 0) {
+		if (substr_count($url, 'yout') > 0) {
 			$type = 'youtube';
 			return self::youtube($url);
-		} elseif (substr_count('vimeo', $url) > 0) {
+		} elseif (substr_count($url, 'vimeo') > 0) {
 			$type = 'vimeo';
 			return self::vimeo($url);
 		}
+		$type = 'unknown';
+		return null;
 	}
 
 	private static function youtube ($url) {
