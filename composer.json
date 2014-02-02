@@ -1,14 +1,14 @@
 {
-    "name": "virtuecenter/urlid",
+    "name": "opine/urlid",
     "type": "library",
-    "description": "extract ids from youtube and vimeo, maybe eventually others",
+    "description": "Service for extracting ids from youtube and vimeo URLs",
     "keywords": [],
     "license": "MIT",
     "authors": [
         {
             "name": "Ryan Mahoney",
             "email": "ryan@virtuecenter.com",
-            "homepage": "http://www.virtuecenter.com",
+            "homepage": "http://opine-php.org",
             "role": "Developer"
         }
     ],
@@ -16,6 +16,6 @@
     	"php": ">=5.3.0"
     },
     "autoload": {
-        "psr-0": {"UrlId": "src/"}
+        "psr-4": {"Opine\\": "src/"}
     }
 }

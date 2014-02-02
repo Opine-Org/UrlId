@@ -1,4 +1,4 @@
-urlid
+UrlID
 =====
 
-Extract ids from Youtube and Vimeo URLs
+Service for extracting ids from youtube and vimeo URLs
